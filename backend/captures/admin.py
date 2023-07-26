@@ -6,4 +6,4 @@ from .models import EmailCapture
 # Register your models here.
 @admin.register(EmailCapture)
 class AdminEmailCapture(admin.ModelAdmin):
-    pass
+    list_display = ['email', 'user']
